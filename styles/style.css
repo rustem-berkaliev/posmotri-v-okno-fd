@@ -30,6 +30,7 @@ ol {
 .page {
   display: flex;
   justify-content: center;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -44,8 +45,9 @@ ol {
   grid-template-columns: 711px 1fr;
   align-items: end;
   width: 1140px;
+  height: 534px;
   gap: 30px;
-  margin-bottom: 133px;
+  /*margin-bottom: 133px;*/
 }
 
 .result__video-container {
