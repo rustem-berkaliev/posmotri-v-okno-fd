@@ -100,6 +100,8 @@ ol {
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
+  text-transform: uppercase;
+  max-width: 196px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -266,8 +268,8 @@ ol {
   background-color: #545050;
 }
 
-.content__list-item:focus-visible {
-
+.content__list-item:has(:focus-visible) {
+  outline: white solid 1px;
 }
 
 /* Кастомный скроллбар */
