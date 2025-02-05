@@ -85,7 +85,6 @@ ol {
   font-weight: 700;
   line-height: 70.5px;
   text-transform: uppercase;
-  /*margin-bottom: 26px;*/
 }
 
 .content__accent {
@@ -114,8 +113,7 @@ ol {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: normal;
-  /*line-height: 16.2px;*/
+  line-height: 16.2px;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -186,6 +184,18 @@ ol {
   display: block;
 }
 
+.search-form__label:has(:focus-visible) {
+  outline: white solid 1px;
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__textfield:focus-visible {
+  outline: white solid 1px;
+}
+
 .search-form__fieldset {
   border: none;
 }
@@ -216,7 +226,7 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
+  min-width: 194px;
   height: 103px;
   object-fit: cover;
   object-position: center;
@@ -254,8 +264,11 @@ ol {
 
 .button:focus {
   text-decoration: none;
-  outline-style: solid;
-  outline-width: 1px;
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: white solid 1px;
 }
 
 .content__card-link_current {
